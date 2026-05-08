@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bytefixer — Τεχνική Υποστήριξη</title>
+  <meta name="description" content="Επισκευή υπολογιστών, κινητών, εγκατάσταση δικτύων. Αλμυρός - Βόλος Μαγνησίας.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#3b8beb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="icon" href="icons/logo.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="icons/logo.jpg">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">
+        <img src="icons/logo.jpg" alt="Bytefixer Logo" width="32" height="32" style="display:block; clip-path:inset(7% round 16%);">
+        <span><span style="color:#fff">Byte</span><span style="color:#3b8beb">fixer</span></span>
+      </a>
+      <div class="nav-links nav-hidden" id="navLinks">
+        <a href="#services">Υπηρεσίες</a>
+        <a href="#pricing">Τιμές</a>
+        <a href="used.html">Μεταχειρισμένα</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Επικοινωνία</a>
+        <a href="tel:+306933194753" class="nav-cta">📞 Καλέστε μας</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <canvas id="warpCanvas"></canvas>
+    <canvas id="particlesCanvas"></canvas>
+    <div class="glow-overlay"></div>
+    <div class="vignette"></div>
+    <div class="noise"></div>
+    <div class="hero-content">
+      <div class="logo-icon" id="heroLogo">
+        <div class="logo-glow"></div>
+        <img src="icons/logo.jpg" alt="Bytefixer Logo" width="140" height="140" class="hero-logo-img" style="display:block; clip-path:inset(7% round 16%); position:relative; z-index:1;">
+      </div>
+      <h1 class="title" id="heroTitle">
+        <span class="letter white" data-i="0">B</span><span class="letter white" data-i="1">Y</span><span class="letter white" data-i="2">T</span><span class="letter white" data-i="3">E</span><span class="letter blue" data-i="4">F</span><span class="letter blue" data-i="5">I</span><span class="letter blue" data-i="6">X</span><span class="letter blue" data-i="7">E</span><span class="letter blue" data-i="8">R</span>
+      </h1>
+      <p class="subtitle" id="heroSubtitle">Technical Support</p>
+    </div>
+    <div class="scroll-indicator" onclick="document.getElementById('problems').scrollIntoView({behavior:'smooth'})">
+      <div class="mouse"></div>
+      <span class="scroll-text">Κύλιση</span>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEMS / HOOK ===== -->
+  <section class="problems-section" id="problems">
+    <canvas id="warpCanvas2"></canvas>
+    <canvas id="particlesCanvas2"></canvas>
+    <div class="glow-overlay"></div>
+    <div class="vignette"></div>
+    <div class="noise"></div>
+    <div class="problems-inner" id="typewriterContainer">
+      <!-- Typed in by JS -->
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label"><span class="line"></span>Υπηρεσίες</span>
+        <h2>Οι Υπηρεσίες <span class="gradient-text">Μας</span></h2>
+        <p class="desc">Πλήρης τεχνική κάλυψη για ιδιώτες και επιχειρήσεις.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="card-num">01</div>
+          <div class="card-icon blue-bg"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3b8beb" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>Επισκευή PC & Laptop</h3>
+          <p>Διάγνωση και επισκευή υπολογιστών όλων των μαρκών. Από προβλήματα software έως βλάβες hardware.</p>
+          <ul>
+            <li>Αντικατάσταση οθόνης laptop</li>
+            <li>Επισκευή μητρικής πλακέτας</li>
+            <li>Αναβάθμιση RAM & SSD</li>
+            <li>Αφαίρεση ιών & malware</li>
+            <li>Εγκατάσταση Windows / macOS</li>
+            <li>Καθαρισμός & θερμόπαστα</li>
+            <li>Ανάκτηση δεδομένων</li>
+            <li>Αντικατάσταση μπαταρίας</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-num">02</div>
+          <div class="card-icon orange-bg"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f0932b" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+          <h3>Επισκευή Κινητών & Tablet</h3>
+          <p>Samsung, iPhone, Xiaomi, Huawei και άλλα. Γρήγορη παράδοση — οι περισσότερες επισκευές εντός ημέρας.</p>
+          <ul>
+            <li>Αντικατάσταση οθόνης</li>
+            <li>Αντικατάσταση μπαταρίας</li>
+            <li>Επισκευή θύρας φόρτισης</li>
+            <li>Επισκευή κάμερας</li>
+            <li>Ξεκλείδωμα συσκευής</li>
+            <li>Επαναφορά λογισμικού</li>
+            <li>Επισκευή μετά από νερό</li>
+            <li>Αντικατάσταση πλαισίου</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-num">03</div>
+          <div class="card-icon blue-bg"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3b8beb" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
+          <h3>Εγκατάσταση Δικτύων</h3>
+          <p>Σχεδιασμός και εγκατάσταση δικτύων για σπίτια και επιχειρήσεις. WiFi, ασφάλεια, σταθερή σύνδεση.</p>
+          <ul>
+            <li>Εγκατάσταση router & switch</li>
+            <li>Επέκταση WiFi (mesh)</li>
+            <li>VPN setup</li>
+            <li>Firewall & ασφάλεια</li>
+            <li>CCTV & NVR εγκατάσταση</li>
+            <li>VLAN ρύθμιση</li>
+            <li>Troubleshooting</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-num">04</div>
+          <div class="card-icon orange-bg"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f0932b" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>IT Support</h3>
+          <p>Τεχνική υποστήριξη για επιχειρήσεις και ιδιώτες. On-site ή remote — είμαστε εκεί όταν μας χρειάζεστε.</p>
+          <ul>
+            <li>Remote υποστήριξη</li>
+            <li>On-site επίσκεψη</li>
+            <li>Email & Office 365</li>
+            <li>Backup & recovery</li>
+            <li>Αναβαθμίσεις λογισμικού</li>
+            <li>Εκπαίδευση χρηστών</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section section-dark" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label"><span class="line"></span>Τιμοκατάλογος</span>
+        <h2>Οι Τιμές <span class="gradient-text">Μας</span></h2>
+        <p class="desc">Ανταγωνιστικές τιμές με εγγύηση ποιότητας. Δωρεάν διάγνωση σε κάθε επισκευή.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <div class="price-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3b8beb" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>PC & Laptop</h3>
+          <div class="price-list">
+            <div class="price-row"><span>Διάγνωση βλάβης</span><span class="price free">Δωρεάν</span></div>
+            <div class="price-row"><span>Εγκατάσταση Windows</span><span class="price">από 30€</span></div>
+            <div class="price-row"><span>Αφαίρεση ιών / malware</span><span class="price">από 25€</span></div>
+            <div class="price-row"><span>Αναβάθμιση RAM</span><span class="price">από 15€</span></div>
+            <div class="price-row"><span>Αναβάθμιση SSD</span><span class="price">από 20€</span></div>
+            <div class="price-row"><span>Καθαρισμός & θερμόπαστα</span><span class="price">από 25€</span></div>
+            <div class="price-row"><span>Αντικατάσταση οθόνης</span><span class="price">από 50€</span></div>
+            <div class="price-row"><span>Επισκευή μητρικής</span><span class="price">Κατόπιν εκτίμησης</span></div>
+          </div>
+        </div>
+        <div class="price-card featured reveal">
+          <div class="featured-badge">Δημοφιλές</div>
+          <div class="price-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3b8beb" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+          <h3>Κινητά & Tablet</h3>
+          <div class="price-list">
+            <div class="price-row"><span>Διάγνωση βλάβης</span><span class="price free">Δωρεάν</span></div>
+            <div class="price-row"><span>Αντικατάσταση οθόνης</span><span class="price">από 40€</span></div>
+            <div class="price-row"><span>Αντικατάσταση μπαταρίας</span><span class="price">από 20€</span></div>
+            <div class="price-row"><span>Θύρα φόρτισης</span><span class="price">από 25€</span></div>
+            <div class="price-row"><span>Επισκευή κάμερας</span><span class="price">από 25€</span></div>
+            <div class="price-row"><span>Επαναφορά λογισμικού</span><span class="price">από 20€</span></div>
+            <div class="price-row"><span>Βλάβη από νερό</span><span class="price">από 35€</span></div>
+            <div class="price-row"><span>Ξεκλείδωμα</span><span class="price">από 15€</span></div>
+          </div>
+        </div>
+        <div class="price-card reveal">
+          <div class="price-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3b8beb" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
+          <h3>Δίκτυα & IT</h3>
+          <div class="price-list">
+            <div class="price-row"><span>Εγκατάσταση router</span><span class="price">από 20€</span></div>
+            <div class="price-row"><span>Ρύθμιση WiFi / Mesh</span><span class="price">από 30€</span></div>
+            <div class="price-row"><span>VPN setup</span><span class="price">από 30€</span></div>
+            <div class="price-row"><span>CCTV εγκατάσταση</span><span class="price">Κατόπιν εκτίμησης</span></div>
+            <div class="price-row"><span>Remote support (ώρα)</span><span class="price">από 20€</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="pricing-note reveal">* Οι τιμές είναι ενδεικτικές. Η τελική τιμή εξαρτάται από τη συσκευή και τη βλάβη. Επικοινωνήστε μαζί μας για ακριβή προσφορά.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label"><span class="line"></span>Επικοινωνία</span>
+        <h2>Επικοινωνήστε <span class="gradient-text">Μαζί Μας</span></h2>
+        <p class="desc">Είμαστε εδώ για κάθε τεχνική σας ανάγκη. Καλέστε μας ή στείλτε μήνυμα.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <a href="tel:+306933194753" class="contact-card">
+            <div class="ci blue-bg"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b8beb" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><h4>Τηλέφωνο</h4><p>+30 693 319 4753</p></div>
+          </a>
+          <a href="mailto:info@bytefixer.gr" class="contact-card">
+            <div class="ci orange-bg"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f0932b" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><h4>Email</h4><p>info@bytefixer.gr</p></div>
+          </a>
+          <div class="contact-card">
+            <div class="ci blue-bg"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b8beb" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><h4>Διεύθυνση</h4><p>Αλμυρός — Βόλος, Μαγνησίας</p></div>
+          </div>
+          <div class="contact-card">
+            <div class="ci orange-bg"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f0932b" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <div><h4>Ωράριο</h4><p>Δευ–Παρ: 9:00–18:00<br>Σάβ: 10:00–14:00</p></div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <h3>Στείλτε Μήνυμα</h3>
+          <div class="form-row">
+            <div class="fg"><label>Ονοματεπώνυμο</label><input type="text" placeholder="Γιάννης Παπαδόπουλος" required></div>
+            <div class="fg"><label>Τηλέφωνο</label><input type="tel" placeholder="+30 69x xxx xxxx"></div>
+          </div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="you@example.com" required></div>
+          <div class="fg"><label>Υπηρεσία</label>
+            <select><option value="">Επιλέξτε υπηρεσία...</option><option>Επισκευή PC / Laptop</option><option>Επισκευή Κινητού / Tablet</option><option>Εγκατάσταση Δικτύων</option><option>IT Support</option><option>Άλλο</option></select>
+          </div>
+          <div class="fg"><label>Μήνυμα</label><textarea rows="4" placeholder="Περιγράψτε το πρόβλημά σας..." required></textarea></div>
+          <button type="submit" class="btn-submit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Αποστολή
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="nav-logo">
+          <img src="icons/logo.jpg" alt="Bytefixer Logo" width="28" height="28" style="display:block; clip-path:inset(7% round 16%);">
+          <span><span style="color:#fff">Byte</span><span style="color:#3b8beb">fixer</span></span>
+        </a>
+        <div class="footer-links">
+          <a href="#services">Υπηρεσίες</a>
+          <a href="#pricing">Τιμές</a>
+          <a href="used.html">Μεταχειρισμένα</a>
+          <a href="blog.html">Blog</a>
+          <a href="#contact">Επικοινωνία</a>
+        </div>
+      </div>
+      <div class="footer-copy">© 2025 Bytefixer. Με επιφύλαξη παντός δικαιώματος.</div>
+    </div>
+  </footer>
+
+  <script src="js/landing.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
+  </script>
+</body>
+</html>
